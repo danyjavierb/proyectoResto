@@ -1,8 +1,8 @@
 const { DataTypes } = require("sequelize");
-const sequelize = require("./../config/db");
+const sequelize = require("../config/db");
 
-const Rol = sequelize.define(
-  "rol",
+const Roles = sequelize.define(
+  "roles",
   {
     nombre: {
       type: DataTypes.STRING,
@@ -15,4 +15,4 @@ const Rol = sequelize.define(
   }
 );
 
-module.exports = Rol;
+module.exports = Roles;

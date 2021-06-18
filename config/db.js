@@ -6,7 +6,7 @@ const conString = `mysql://${DB_USER}${
   DB_PWD && `:${DB_PWD}`
 }@${DB_SERVER}:${DB_PORT}/${DB_NAME}`;
 
-const seq = Sequelize(conString);
+const seq = new Sequelize(conString);
 
 seq
   .authenticate()
